@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pl">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,11 +8,16 @@
     <style>
         /* --- PROSTY CSS --- */
         :root {
-            --bg-color: #0f172a;       /* Ciemne tło */
-            --card-bg: #1e293b;        /* Tło elementów */
-            --text-main: #f8fafc;      /* Główny kolor tekstu */
-            --text-muted: #94a3b8;     /* Szary tekst */
-            --accent: #38bdf8;         /* Kolor akcentu (niebieski) */
+            --bg-color: #0f172a;
+            /* Ciemne tło */
+            --card-bg: #1e293b;
+            /* Tło elementów */
+            --text-main: #f8fafc;
+            /* Główny kolor tekstu */
+            --text-muted: #94a3b8;
+            /* Szary tekst */
+            --accent: #38bdf8;
+            /* Kolor akcentu (niebieski) */
         }
 
         * {
@@ -99,12 +105,16 @@
 
         /* --- STYL DLA UKRYTEGO SŁOWA (SPOILER) --- */
         .spoiler {
-            background-color: var(--accent); /* Tło zakrywające */
-            color: var(--accent);            /* Tekst w kolorze tła (niewidoczny) */
+            background-color: var(--accent);
+            /* Tło zakrywające */
+            color: var(--accent);
+            /* Tekst w kolorze tła (niewidoczny) */
             padding: 0 6px;
             border-radius: 4px;
-            cursor: pointer;                 /* Łapka po najechaniu */
-            user-select: none;               /* Blokada zaznaczania tekstu */
+            cursor: pointer;
+            /* Łapka po najechaniu */
+            user-select: none;
+            /* Blokada zaznaczania tekstu */
             transition: all 0.3s ease;
             font-weight: bold;
         }
@@ -115,21 +125,24 @@
 
         /* Klasa dodawana po kliknięciu (odkrywa tekst) */
         .spoiler.revealed {
-            background-color: rgba(56, 189, 248, 0.2); /* Lekko przezroczyste tło */
-            color: var(--text-main);                   /* Normalny kolor tekstu */
+            background-color: rgba(56, 189, 248, 0.2);
+            /* Lekko przezroczyste tło */
+            color: var(--text-main);
+            /* Normalny kolor tekstu */
             cursor: default;
         }
     </style>
 </head>
+
 <body>
 
     <div class="container">
-        
+
         <!-- NAGŁÓWEK -->
         <header>
             <h1>Kuba</h1>
             <p class="subtitle">[Nudze sie]</p>
-            
+
             <div class="socials">
                 <a href="https://github.com/[TwójLogin]" target="_blank">GitHub</a>
                 <a href="https://linkedin.com/in/[TwójProfil]" target="_blank">LinkedIn</a>
@@ -141,10 +154,10 @@
         <section id="about">
             <h2>O mnie</h2>
             <p>
-                ndidze sie 
+                ndidze sie
             </p>
             <p>
-                Kliknij w to szmato
+                Kliknij w to szmatooooooaaaa
             </p>
         </section>
 
@@ -157,7 +170,7 @@
 
         // Dla każdego elementu dodaj nasłuchiwanie kliknięcia
         spoilers.forEach(element => {
-            element.addEventListener('click', function() {
+            element.addEventListener('click', function () {
                 // Dodaj klasę 'revealed', która zmienia wygląd
                 this.classList.add('revealed');
             });
@@ -165,4 +178,5 @@
     </script>
 
 </body>
+
 </html>
